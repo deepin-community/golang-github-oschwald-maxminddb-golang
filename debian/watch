@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/golang-github-oschwald-maxminddb-golang-$1\.tar\.gz/ \
+  https://github.com/oschwald/maxminddb-golang/tags .*/v?(\d\S*)\.tar\.gz

@@ -1,5 +1,51 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-oschwald-maxminddb-golang (1.8.0-1) unstable; urgency=medium
 
-  * Initial release
+  [ Cyril Brulebois ]
+  * New upstream release.
+  * Add myself to Uploaders.
+  * Drop golang-gopkg-check.v1-dev from (Build-)Depends, as it doesn't
+    seem to be used. golang-github-stretchr-testify-dev could be useful
+    instead but it's only required for the test suite, which doesn't get
+    run.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Bump debhelper compat from 9 to 12.
+  * Fix link to specification in debian/copyright.
+  * Update gitlab-ci configuration.
+  * Add upstream metadata.
+
+ -- Cyril Brulebois <cyril@debamax.com>  Mon, 28 Dec 2020 10:48:45 +0000
+
+golang-github-oschwald-maxminddb-golang (1.2.0-4) unstable; urgency=medium
+
+  * Vcs-* urls: pkg-go-team -> go-team.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 05 Feb 2018 23:23:59 -0500
+
+golang-github-oschwald-maxminddb-golang (1.2.0-3) unstable; urgency=medium
+
+  * point Vcs-* urls to salsa.d.o subproject
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 25 Jan 2018 16:08:45 -0500
+
+golang-github-oschwald-maxminddb-golang (1.2.0-2) unstable; urgency=medium
+
+  * Move to salsa.debian.org.
+  * Priority extra -> optional.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 30 Dec 2017 00:52:03 -0500
+
+golang-github-oschwald-maxminddb-golang (1.2.0-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Bump Standards-Version to 4.0.0.
+  * Set Testsuite to autopkgtest-pkg-go.
+  * d/copyright: change license to ISC.
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 03 Aug 2017 00:29:53 -0400
+
+golang-github-oschwald-maxminddb-golang (0.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #831795)
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 20 Jul 2016 17:03:23 -0400
